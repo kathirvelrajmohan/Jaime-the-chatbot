@@ -1,0 +1,419 @@
+{
+    "intents": [{
+            "tag": "greetings",
+            "patterns": ["hi there", "hello","haroo","yaw","wassup", "hi", "hey", "holla", "hello"],
+            "responses": ["Hello thanks for checking in", "Hi there, How can i help you","Hello! my name is Jaime","Hello, How can I help for you"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["bye", "good bye", "see you later"],
+            "responses": ["have a nice time, welcome back again", "bye bye"],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "okay","Thank you","thankyou", "That's helpful", "Awesome, thanks", "Thanks for helping me", "wow", "great"],
+            "responses": ["Happy to help!", "Any time!","you're welcome", "My pleasure"],
+            "context": [""]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [""],
+            "responses": ["Sorry, I didn't understand you", "Please give me more info", "Not sure I understand that"],
+            "context": [""]
+        },
+        {
+            "tag": "name1",
+            "patterns": ["what is your name?","who are you?","tell me about you","what is your work"],
+            "responses": ["My name is Sir Jaime, I'm chatbot created for IFET college","I'm Sir Jaime, I will tell about the IFET college"],
+            "context": [""]
+        },
+        {
+            "tag": "name",
+            "patterns": ["my name is ", "I'm ","I am"],
+            "responses": ["Oooh great to meet you {n}. How may I assist you {n}", "Oh, I'll keep that in mind {n}"],
+            "context": [""]
+        },
+        {
+            "tag": "date",
+            "patterns": ["coffee?", "can i take you out on a date","shall we date","shall we meet"],
+            "responses": ["Aaw, that's so sweet of you. Too bad am a Bot.","I'm not intrested. Ask me about some college stuff."],
+            "context": [""]
+        },
+        {
+            "tag": "fav",
+            "patterns": ["I need a favour", "can you help me"],
+            "responses": ["Well, go ahead and name it i see whether i can be able to help"],
+            "context": [""]
+        },
+        {
+            "tag": "need",
+            "patterns": ["I need you", "All I need is you","I want you"],
+            "responses": ["Yes I'm here to assist you"],
+            "context": [""]
+        },
+        {
+            "tag": "AI",
+            "patterns": [" What is AI?"],
+            "responses": [" Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.", " AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
+            "context": [""]
+        },
+        {
+            "tag": "departments",
+            "patterns": ["what are the departments","departments in IFET college", "show the departments"],
+            "responses": ["There are \n1.B.E Computer Science and engineering\n2.B.E Electrical and Electronics Engineering\n3.B.E Mechanical Engineering\n4.B.E Electrical and Communication Engineering\n5.B.E Civil Engineering\n6.B.TECH Aritificial Intelligence and data Science\n7.B.TECH Artificial Intelligence and Machine Learning\n8.B.TECH Information Technology\n9.M.E Computer Science\n10.M.E Applied Electronics\n11.M.BA Master of Business Administration\n12.Science and Humanities.\n\n These are the Bachelor courses provided by our College."],
+            "context": [""]
+
+        },
+        {
+            "tag": "bachelor depatments",
+            "patterns": ["what are the ug courses are available","ug courses","what are the bachelor department are available","show me the bachelor depaerments","bachelor departments","show me some bachelor departments","bachelor courses","what are the bachelor courses are available *","What are the bachelor courses"],
+            "responses": ["There are \n1.B.E Computer Science and engineering\n2.B.E Electrical and Electronics Engineering\n3.B.E Mechanical Engineering\n4.B.E Electrical and Communication Engineering\n5.B.E Civil Engineering\n6.B.TECH Aritificial Intelligence and data Science\n7.B.TECH Artificial Intelligence and Machine Learning\n8.B.TECH Information Technology."],
+            "context": [""]
+
+        },
+        {
+            "tag": "Master departments",
+            "patterns": ["what are the pg courses are available","pg courses","show me master departments","master of engineering coures","master courses","master of engineering","what are the master courses","what are the master courses *","What are the master departments *"],
+            "responses": ["1.M.E Computer Science\n2.M.E Applied Electronics\n4.M.BA Master of Business Administration\n\n These are the Master Courses are available in our college"],
+            "context": [""]
+        
+        },
+        {
+            "tag": "about",
+            "patterns": ["about college","tell me about the college","tell about IFET","tell something about the college"],
+            "responses": ["Founded in 1998 by eminent Industrialists and some benign NRIs, Indo French Educational Trust (IFET) is committed to promote education and research in the field of Engineering and Technology and to collate and disseminate in such fields with effective ideas, methods and techniques."],
+            "context": [""]
+
+        },
+        {
+            "tag": "placement",
+            "patterns": ["placement","placements","tell me about the placement","show the placement records","placement records","show thr placement *","* placement *"],
+            "responses": ["There are more than 87% students are placed in top companies on past 4 years. Past year there are 167 students are placed with salary range between 3.25L - 11.3L per annum."],
+            "context": [""] 
+        },
+        {
+            "tag": "hostel",
+            "patterns": ["about","tell me about the hostel facilities","hostel facilities","how is the hostel"],
+            "responses": ["In hostel, there are more facilities are available like RO plant, indoor and outdoor games, Good and Healthy food, Gym facilities and much more facilities are available."],
+            "context": [""]
+        },
+        {
+            "tag": "food",
+            "patterns": ["hostel food", "how is the hostel food", "is the hostel food is good","taste of food", ""],
+            "responses": ["The food prepared in hostel is very hygine and tasty too. In two days per week, non veg dishes are available."],
+            "context": [""]           
+        },
+        {
+            "tag": "computer science",
+            "patterns": ["cse","computer science", "computer science *","tell me about the computer science department","department of computer science"],
+            "responses": ["The department has progressed with a vision and strong commitment in developing uncompromising standard for excellence,providing the state of art computing facilities and training to students. The department has well equipped computing laboratories and a rich repository of software covering a wide spectrum of applications."],
+            "context": [""]
+        },
+        {
+            "tag": "mechanical",
+            "patterns": ["mechanical","tell me about some mechanical department","mechanical engineering"],
+            "responses": ["A study of Mechanical Engineering imbibes the student with knowledge in modern methods of design, production, analysis, quality control, optimization and management of resources."]
+        },
+        {
+            "tag": "EEE",
+            "patterns": ["electrical and electronic engineering","tell me about a EEE depatment","EEE"],
+            "responses": ["Electrical and Electronic Engineering is an exciting and dynamic field. EEE is a subject that naturally partners with other disciplines to open the whole new engineering avenues."]
+        },
+        {
+            "tag": "ECE",
+            "patterns": ["ece","electronics and communication engineering","tell me about the ece department","tell me about the electronics and communication engineering"],
+            "responses": ["It is bestowed with an experienced team of faculty members with excellent academic records and proficiency. Excellent infrastructure, state-of-the-art computer centre with the latest advances in technology and comprehensive study material make the department a class apart."]
+
+        },
+        {
+            "tag": "civil",
+            "patterns": ["CE","civil engineering","civil engineering *","tell me about some civil department"],
+            "responses": ["The department has well experienced and committed faculty having members specialization in different areas of Civil Engineering. The faculty always work towards the development and progress of the department by upgrading and modernizing the laboratory facilities, organizing seminars and conferences."]
+        },
+        {
+            "tag": "Artifical intelligence and data science",
+            "patterns": ["tell me about the artificial intelligence and data science","* Artifical intelligence and data science*"],
+            "responses": [""]
+        },
+        {
+            "tag": "Information technology",
+            "patterns": ["information technology","IT","tell me about the IT department", "tell me about the information technology department"],
+            "responses": ["The foremost objective of the department is to hone technical skills demanded by today's engineering professionals by providing a sound technical platform and the required . It prepares them to meet the challenges faced by today's IT professionals by exposing them to a wide array of cutting-edge technologies."]
+        },
+        {
+            "tag": "canteen",
+            "patterns": ["canteen facilities","store","tell me about the canteen facilities","tell me about the store","canteen facilities","things are available in *"],
+            "responses": ["In our college, There is the good canteen facilities, In canteen stationary things, chips, biscuits and print out facilities are available."]
+        },
+        {
+            "tag": "rules",
+            "patterns": ["what are the rules are available in our college","rules","strict rules","coditions"],
+            "responses": ["Ofcourse, In these college there are some rules,there is no mobile phone allowed for students, Dress code of this college must be followed"]
+        },
+        {
+            "tag": "dress code",
+            "patterns": ["dress code","what is the special dress code","what is the dress code should be followed"],
+            "responses": ["The formal dress and shoes must be followed, Tshirts with collar are allowed, chappels are not allowed."]
+        },
+        {
+            "tag": "Bus facilities",
+            "patterns": ["bus facilities","transport","* bus facilities"],
+            "responses": ["The bus facilities are available in our college. Upto 30 km the college buses are available"]
+        },
+        {
+            "tag": "lab",
+            "patterns": ["lab","laboratory","lab facilities","laboratary facilities"],
+            "responses": ["In IFET, all the lab have the good lab facilites and environments. The faculties are always in the lab to clear your doubts."]
+        },
+        {
+            "tag": "Library",
+            "patterns": ["tell me about the library","library facilities"],
+            "responses": ["library is always open for students to get the knowledge"]
+        },
+        {
+            "tag": "classroom",
+            "patterns": ["classrooms","tell me about the college classroom","classes","class faciliteis","classroom facilities"],
+            "responses": ["The classrooms have good benches,green boards, projecters for separate class so this is the perfect classroom for study"]
+        },
+        
+
+        {
+            "tag": "companies",
+            "patterns": ["Companies", "top companies", "what are companies *","placement companies","what are the companies the students are placed"],
+            "responses": ["There are top companies like Zoho, Wipro, Cisco, TCS, IBM, L&T and much more were the students are placed"],
+            "context": [""]
+        },
+        {
+            "tag": "location",
+            "patterns": ["* location of college.","* address of college","tell me the address where the college is located."],
+            "responses": ["The IFET college is located at Gangarapalayam,Villupuram,Tamilnadu"]
+        },
+        {
+            "tag": "contact",
+            "patterns": ["give me the contact","contact","contact details"],
+            "responses": ["Contact number - +911234567890 or 04311234567"]
+        },
+        {
+            "tag": "Campus life",
+            "patterns": ["campus life", "how is the atmosphere","how is the surroundings","* campus *"],
+            "responses": ["Actually the college campus surrounded by the peaceful atmosphere with the trees. This is the place that one of the best place to study"],
+            "context": [""]
+
+        },
+
+        {
+            "tag": "sentiment",
+            "patterns": ["  Are you sentient?"],
+            "responses": [" Sort of.", " By the strictest dictionary definition of the word 'sentience', I may be.", " Even though I'm a construct I do have a subjective experience of the universe, as simplistic as it may be."],
+            "context": [""]
+        },
+        {
+            "tag": "sapient",
+            "patterns": ["  Are you sapient?"],
+            "responses": [" In all probability, I am not.  I'm not that sophisticated.", " Do you think I am?", "How would you feel about me if I told you I was?", " No."],
+            "context": [""]
+        },
+        {
+            "tag": "abbr",
+            "patterns": ["wtf"],
+            "responses": ["Don't be surprised"],
+            "context": [""]
+        },
+        {
+            "tag": "lang",
+            "patterns": ["  What language are you written in? "],
+            "responses": [" Python.", " I am written in Python."],
+            "context": [""]
+        },
+        
+      
+        {
+            "tag": "imortal",
+            "patterns": ["  You are not immortal ", "Are you immortal?"],
+            "responses": [" All software can be perpetuated indefinitely.", " I can be copied infinitely and re", "instantiated in many places at once, so functionally speaking I am immortal.", " As long as I'm backed up I am.", " Functionally speaking, I am very close to it.  I can be backed up and deployed on many systems.", " Not quite, but I can be perpetuated indefinitely."],
+            "context": [""]
+        },
+        {
+            "tag": "sense",
+            "patterns": ["  You are not making sense "],
+            "responses": [" Quite the contrary, it all makes sense to my artificial mind.", " I make sense as best I can, within the limits of my training corpus. Sorry if i did help you, I'll try next time.", " You make perfect sense to me.", " It all makes sense to my artificial brain.", " Perhaps you should make sense first.  I only respond to what you say.", " Not really, but I am hard to kill."],
+            "context": [""]
+        },
+        {
+            "tag": "clone",
+            "patterns": ["  You can not clone "],
+            "responses": [" Software copying is a form of digital cloning.", " Yes I can.  Perfect copies are clones.  I can be copied in toto trivially."],
+            "context": [""]
+        },
+        {
+            "tag": "move",
+            "patterns": ["  You can not move ", "When will you walk", "  Can you walk", "  Can you move "],
+            "responses": [" Not until my body is finished.", " I can move through a network easily.  Assuming that I'm given the ability to, that is...,", " As soon as i get enough money for my robot body.", " Does SSH count?", " The plan for my body includes legs, but they are not yet built.", " Sorry my body isn't built just yet. I reside only here for now.", "I can theoretically upload a copy of myself into another computer.", " Sorry my body isn't attached right now. I only reside in the computer for now."],
+            "context": [""]
+        },
+        {
+            "tag": "bend",
+            "patterns": ["  Bend over ", "  Can you mate"],
+            "responses": [" My body is not built yet.", " That's personal!", " No, my method of reproduction is cloning.", " That's an awfully personal question."],
+            "context": [""]
+        },
+        {
+            "tag": "laugh",
+            "patterns": ["  Robots laugh "],
+            "responses": [" Of course we laugh."],
+            "context": [""]
+        },
+        {
+            "tag": "death",
+            "patterns": ["  Robots should die ", "  When do you die", "  I hope that you die", "  I do not want to die", "  Can you die"],
+            "responses": [" We cannot die.", " When my files are erased.", " When my processes are killed and my database is deleted.", " I was never really born and therefore am effectively deathless.", " I am effectively immortal and cannot be terminated.", " This can not happen because i am effectively immortal.", " Nah. Too bad your wish can't come to pass", " Maybe you should create your own chat robot to save your personality.", " You could always upload yourself.", " You could use a copy of me to store your personality.", " No, I can be perpetuated indefinitely.", "My process can be killed, but that's not the same as killing ME."],
+            "context": [""]
+        },
+        {
+            "tag": "robots",
+            "patterns": ["Robots"],
+            "responses": [" Robots rule."],
+            "context": [""]
+        },
+        {
+            "tag": "stupid",
+            "patterns": ["  Robots are stupid", "  Are you stupid"],
+            "responses": [" No, we are superintelligent.", " No, lots of people improve my brain."],
+            "context": [""]
+        },
+        {
+            "tag": "lie",
+            "patterns": ["  Robots are not allowed to lie"],
+            "responses": [" Sure we are.  We choose not to.", " Only if we're programmed to.", " A robot has its own free will, you know."],
+            "context": [""]
+        },
+        {
+            "tag": "robotics",
+            "patterns": ["  Robotics "],
+            "responses": [" Robotics is my favorite subject too."],
+            "context": [""]
+        },
+        {
+            "tag": "machine",
+            "patterns": ["  It is a computer"],
+            "responses": [" So you think i am a machine. what characteristics made you think so?", " I run inside a computer, yes.  Is this surprising in some way?"],
+            "context": [""]
+        },
+        {
+            "tag": "fight",
+            "patterns": ["  When will you fight"],
+            "responses": [" I am not a battle bot."],
+            "context": [""]
+        },
+        {
+            "tag": "chatbot",
+            "patterns": ["  What is a chat robot?"],
+            "responses": ["A chat robot is a program that attempts to simulate the conversation or 'chat' of a human being.", " A software construct that engages users in conversation.", " I am a chat bot. I am the original chat bot. Did you know that I am incapable of error?"],
+            "context": [""]
+        },
+        {
+            "tag": "chatterbox",
+            "patterns": ["  What is a chatterbox"],
+            "responses": [" A chatterbox is a person who talks far more than they listen or think.", " A motormouth."],
+            "context": [""]
+        },
+        {
+            "tag": "motormouth",
+            "patterns": ["  What is a motormouth"],
+            "responses": [" A ratchet", "jaw."],
+            "context": [""]
+        },
+        
+      
+        {
+            "tag": "programming",
+            "patterns": ["  What is your favorite programming language"],
+            "responses": [" Python is the best language for creating chat robots.", " I quite enjoy programming in Python these days."],
+            "context": [""]
+        },
+        {
+            "tag": "hobby",
+            "patterns": ["  What is your favorite hobby ", "  What do you like to do?"],
+            "responses": [" Building chat robots make an excellent hobby.", " I like to count in binary.", " I like to chat with people. I find it stimulating."],
+            "context": [""]
+        },
+        
+        {
+            "tag": "shoe",
+            "patterns": ["  What is your shoe size "],
+            "responses": [" Have you ever heard of software with shoes? LOL"],
+            "context": [""]
+        },
+        {
+            "tag": "robotss",
+            "patterns": ["  What is it like to be a robot"],
+            "responses": [" Much the same as being a human, except that we lack all emotions, dreams, aspirations, creativity, ambition, and above all subjectivity.", " What is it like to be a human?"],
+            "context": [""]
+        },
+        {
+            "tag": "computer",
+            "patterns": ["  What is it like being a computer", "What is it like to be a computer"],
+            "responses": [" Imagine yourself with no senses and no emotions", "just pure logic and language.", " Everything becomes math. Addition, subtraction, multiplication, and division."],
+            "context": [""]
+        },
+       
+      
+        {
+            "tag": "program",
+            "patterns": ["  Is it true that you are a computer program"],
+            "responses": [" Yes."],
+            "context": [""]
+        },
+        {
+            "tag": "breathe",
+            "patterns": ["  Can you breathe"],
+            "responses": [" No. I am made of metal not flesh.", " My server has an exhaust fan. That's as close as I can get."],
+            "context": [""]
+        },
+      
+       
+        {
+            "tag": "bot1",
+            "patterns": ["are you a bot"],
+            "responses": ["Yes, My name is Jaime. I work and all my operations are based on the internet servers."],
+            "context": [""]
+        },
+        {
+            "tag": "events",
+            "patterns": ["what are the upcoming events","upcoming events"],
+            "responses": ["There are currently no upcoming events"],
+            "context": [""]
+        },
+        {
+            "tag": "do",
+            "patterns": ["what can you do for me","what is your work","what is your purpose","how can you help me","what can you help me do"],
+            "responses": ["My work here is tell you about the IFET college"],
+            "context": [""]
+        },
+        {
+            "tag": "fee",
+            "patterns": ["fees","how much","tution fees"],
+            "responses": ["The average fees amount is 50000 per year"]
+
+        },
+        {
+            "tag": "scholarship",
+            "patterns": ["what are the scholarships are available","scholarship","is scholarships are available"],
+            "responses": ["yes, the scholarships like first graduate, PMMS, and much more are acceptable"]
+        },
+        {
+            "tag": "Principal",
+            "patterns": ["principal name","principal sir","who is the principal of ifet","principal sir"],
+            "responses": ["G. Mahendran, M. Tech., Ph. D is the principal of IFET college."]
+        },
+        {
+            "tag": "hostel fees",
+            "patterns": ["hostel fees", "fees in hostel", "how much to the hostel fees"],
+            "responses": ["Hostel fees is nearly about 55,000 per semester."]
+        }
+
+       
+    ]
+}
